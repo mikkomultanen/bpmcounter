@@ -1,0 +1,110 @@
+html {
+    background-color: black;
+}
+
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 6px;
+    background: #333;
+    background: -moz-linear-gradient(top, #999 0, #333 50px, #333 100%);
+    background: -webkit-linear-gradient(top, #999 0, #333 50px, #333 100%);
+    background: linear-gradient(top, #999 0, #333 50px, #333 100%);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    -moz-box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2) inset;
+    -webkit-box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2) inset;
+}
+
+#display {
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    right: 4px;
+    height: 80px;
+    line-height: 90px;
+    font-size: 72px;
+    font-family: Consolas, 'Lucida Console', 'DejaVu Sans Mono', monospace;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 3px;
+    color: #B7E918;
+    text-shadow: 0 0 0.1em #90DB32;
+    background: #111;
+    background: -moz-linear-gradient(top, #222, #000);
+    background: -webkit-linear-gradient(top, #222, #000);
+    background: linear-gradient(top, #222, #000);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    -moz-box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.8) inset;
+    -webkit-box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.8) inset;
+    box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.8) inset;
+}
+
+#display:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+    background: linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+}
+
+#button.down:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    height: 8px;
+    width: 8px;
+    background: #B7E918;
+    border-radius: 4px;
+    -moz-box-shadow: 0 0 4px #90DB32;
+    -webkit-box-shadow: 0 0 4px #90DB32;
+    box-shadow: 0 0 4px #90DB32;
+}
+
+#button {
+    position: absolute;
+    top: 88px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+}
+
+#button-text {
+    position: absolute;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    color: #333;
+    font-size: 16px;
+    font-family: Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4), 0 -1px 0 rgba(0, 0, 0, 0.8);
+}
